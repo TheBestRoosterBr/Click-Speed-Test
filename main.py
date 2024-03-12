@@ -72,19 +72,19 @@ class ClickSpeedTest:
         animal_image = None
         if self.clicks < 20:
             animal = "Patético. Você é um Saguin"
-            animal_image = tk.PhotoImage(file="fotos/saguin.png")
+            animal_image = tk.PhotoImage(file="Assets/saguin.png")
         elif self.clicks < 30:
             animal = "Horrível. Você é uma Coruja"
-            animal_image = tk.PhotoImage(file="fotos/coruja.png")
+            animal_image = tk.PhotoImage(file="Assets/coruja.png")
         elif self.clicks < 50:
             animal = "Parabéns! Você é um Calango"
-            animal_image = tk.PhotoImage(file="fotos/calango.png")
+            animal_image = tk.PhotoImage(file="Assets/calango.png")
         elif self.clicks < 70:
             animal = "Nossa! Você é um Carcará"
-            animal_image = tk.PhotoImage(file="fotos/carcara.png")
+            animal_image = tk.PhotoImage(file="Assets/carcara.png")
         else:
             animal = "Caramba! Você precisa de uma namorada"
-            animal_image = tk.PhotoImage(file="fotos/namorada.png")
+            animal_image = tk.PhotoImage(file="Assets/namorada.png")
 
         self.result_label.config(text=f"{self.clicks} cliques. {animal}.")
         self.click_button.config(text="", image=animal_image)
